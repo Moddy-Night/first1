@@ -1,19 +1,23 @@
 html {
   font-family: Roboto;
+  font-weight: bold;
   box-sizing: border-box;
   font-size: 2rem;
   scroll-behavior: smooth;
 }
 body {
   color: #f5f5f5;
-  background-color: #333333;
+  background-image: url(redMoon.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   box-sizing: border-box;
 
   margin: 0 auto;
   text-align: center;
 }
 .BluSky {
-  color: aqua;
+  color: rgb(180, 23, 36);
 }
 ul.inline-list {
   list-style-type: none; /* Removes the default bullet points */
@@ -24,22 +28,24 @@ ul.inline-list li {
   text-decoration: none;
   display: inline; /* Makes the list items display inline */
   margin-right: 30px; /* Adds some space between the items */
-  color: #ffffff;
 }
 .ListStyle {
   list-style-type: none; /* Removes the default bullet points */
   padding: 0;
   margin: 0;
+  width: 350px;
+  height: fit-content + 20px;
 }
 .Card {
   margin: auto;
   width: fit-content;
 }
 #AboutMe {
+  font-size: 0.5rem;
   padding: 10px 25px;
   border-radius: 25px;
   margin: 10px auto 10px auto;
-  background-color: blue;
+  background-color: rgb(15, 17, 20);
   border-radius: 25px;
   width: fit-content;
 }
@@ -58,29 +64,80 @@ ul.inline-list li {
 }
 ul.ListStyle li {
   margin: 10px auto;
-  background-color: burlywood;
-  width: fit-content;
-  padding: 30px;
+  background-color: rgb(221, 216, 216);
+  width: auto;
+  padding: 50px 0;
 }
 nav {
   text-align: center;
-  background-color: darkseagreen;
+  background-color: transparent;
 }
 ul.inline-list li a {
   margin: 10px 0;
   padding: 10px;
   display: inline-block;
-  background-color: rgb(150, 247, 179);
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
   border-radius: 5px;
   border: solid black 2px;
   text-decoration: none;
 }
-ul.inline-list li a:hover {
-  background-color: aqua;
-  border: aqua;
+.left:hover {
+  background-color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0);
+
   transition: 0.8s ease all;
   transform: translateY(-5px);
   transform: translateX(-5px);
-  box-shadow: 20px 16px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 20px 16px 16px -6px rgba(238, 232, 232, 0.75);
+}
+.right:hover {
+  background-color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0);
+
+  transition: 0.8s ease all;
+  transform: translateY(5px);
+  transform: translateX(5px);
+  box-shadow: -20px 16px 16px -6px rgba(238, 232, 232, 0.75);
+}
+main section h1 span {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+  border-radius: 15%;
+}
+section div ul input:first-child {
+  font-size: 0.5rem;
+  margin-right: 50px;
+}
+section div ul > input {
+  font-size: 0.5rem;
+  margin-left: 50px;
+}
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color: #fe1a00;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+
+  text-shadow: 0px 1px 0px #b23e35;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  background-color: #ce0100;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.myButton a {
+  color: #ffffff;
+  text-decoration: none;
 }
